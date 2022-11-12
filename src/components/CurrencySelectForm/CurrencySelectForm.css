@@ -1,0 +1,18 @@
+.currency-select {
+    width: 250px;
+    margin: 25px;
+
+}
+
+.select-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#curr-swap {
+    width: 50px;
+    height: 50px;
+}
