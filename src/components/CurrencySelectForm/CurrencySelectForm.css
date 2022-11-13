@@ -9,10 +9,38 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 30px 0;
+}
 
+@media (max-width: 794px) {
+    .container {
+        max-width: none;
+    }
+    .select-container {
+        flex-direction: column;
+    }
 }
 
 #curr-swap {
     width: 50px;
     height: 50px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 3s;
+}
+
+.swap-curr-btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.select-group {
+    border: 2px dashed #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }

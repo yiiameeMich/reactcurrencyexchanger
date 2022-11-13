@@ -27,29 +27,30 @@ header {
 .currency-value {
     font-size: 26px;
     padding: 20px;
-    font-family: 'Sono', sans-serif;
-    font-weight: 700;
-    text-shadow: 3px 3px 3px rgba(154, 149, 149, 0.85);
-    border: 2px #fff;
-    border-style: dashed none none dashed;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight:400;
+    border: 2px dashed #fff;
+    background-color: rgba(10,18,5, 0.7);
     margin: 20px;
-}
-
-.currency-value:nth-last-of-type(1){
-    border-style: none dashed dashed none;
+    color: #fff8f8;
+    text-shadow: 3px 3px 3px #000000;
 }
 
 .app-name {
     font-size: 42px;
-    font-weight: 700;
-    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Chakra Petch', sans-serif;
     letter-spacing: 2px;
-    text-shadow: 3px 3px 3px rgba(154, 149, 149, 0.85);
+    text-shadow: 3px 3px 3px #000000;
 }
 
 .currencies-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0;
+    padding: 50px 0;
+    border: 2px dashed #fff;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
 }

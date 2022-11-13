@@ -26,8 +26,8 @@ export default function CurrencySelectForm() {
 			return output.value = input.value
 		} else if (select_second.value === 'UAH') {
 			return output.value = ((select_first.value) / input.value).toFixed(2)
-		} else if ((select_second.value === EUR && select_first.value === USD) || (select_second.value === USD && select_first.value === EUR)) {
-			return output.value = "Can't exchange these currencies"
+		} else if ((select_first.value === USD && select_second.value === EUR) || (select_first.value === EUR && select_second.value === USD)) {
+			return output.value = ((select_first.value * input.value) / select_second.value).toFixed(2)
 		} else {
 			return output.value = ((input.value) / select_second.value).toFixed(2)
 		}
@@ -51,8 +51,8 @@ export default function CurrencySelectForm() {
 						       onInput={() => calculateCurrency()}/>
 					</div>
 				</div>
-				<img src={'https://cdn-icons-png.flaticon.com/512/7133/7133490.png'}
-				     alt={'swap currencies'} title={'Swap Currencies'} id='curr-swap' />
+				<button className='swap-curr-btn'><img src={'https://cdn-icons-png.flaticon.com/512/5266/5266493.png'}
+				     alt={'swap currencies'} title={'Swap Currencies'} id='curr-swap' /></button>
 				<div className="select-group">
 					<select id='select-2' className="currency-select form-select form-select-md" defaultValue={USD}
 					        onChange={() => {
